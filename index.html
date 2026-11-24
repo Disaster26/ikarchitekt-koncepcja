@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Architekt Kielce - ikarchitekt Izabela Kułagowska, projekty domów i budynków</title>
+<meta name="description" content="Pracownia architektoniczna ikarchitekt w Kielcach: projekty domów jednorodzinnych, budynków wielorodzinnych i usługowych, przebudowy, wnętrza, nadzór autorski. Tel. 793 301 105.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/dom-na-skarpie-1-330.webp" imagesrcset="img/dom-na-skarpie-1-330.webp 330w, img/dom-na-skarpie-1.webp 656w" imagesizes="(min-width:900px) 560px, 48vw" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Cpath d='M9 8v16M15 6v18M15 17l7-6M17 15l6 9' stroke='%232A2A2A' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--ink:#2A2A2A;--gr:#808080;--txt:#3A3B3D;--mut:#66696E;--g:#EEF0F2;--line:#D5D8DC;--rd:#B4502C;--rd2:#9A4223;--dk:#1F2022;--hh:64px;--w:min(calc(100vw - 32px),1240px)}
+@media (min-width:900px){:root{--hh:80px;--w:min(calc(100vw - 80px),1240px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:var(--hh)}
+body{margin:0;font:17px/1.65 Jost,"Century Gothic",Arial,sans-serif;color:var(--txt);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:400;line-height:1.12;color:var(--ink);margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.2vw,50px);font-weight:300}
+h3{font-size:21px;font-weight:500}
+p{margin:0 0 1em}
+.in{width:var(--w);margin:0 auto}
+
+/* linia wymiarowa jak na rysunku: kreska + skośne znaczniki na końcach */
+.dim{position:relative;display:flex;align-items:center;gap:12px;font-size:14px;line-height:1.3;color:var(--mut);padding-top:2px}
+.dim::before{content:"";flex:1;height:1px;background:linear-gradient(var(--rd),var(--rd)) center/100% 1px no-repeat;order:0;min-width:24px}
+.dim i{position:relative;order:-1;width:1px;height:14px;background:var(--rd);flex:none}
+.dim i::after{content:"";position:absolute;left:-4px;top:3px;width:9px;height:1.5px;background:var(--rd);transform:rotate(-45deg)}
+.dim b{order:1;font-weight:500;color:var(--ink)}
+.dim em{order:2;font-style:normal;position:relative;width:1px;height:14px;background:var(--rd);flex:none}
+.dim em::after{content:"";position:absolute;left:-4px;top:3px;width:9px;height:1.5px;background:var(--rd);transform:rotate(-45deg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;font:500 16px/1 Jost,Arial,sans-serif;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:#fff;cursor:pointer;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.rd{background:var(--rd);border-color:var(--rd);color:#fff}
+.btn.rd:hover{background:var(--rd2);border-color:var(--rd2)}
+
+/* naglowek */
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);height:var(--hh)}
+header .in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.logo .w{font-size:27px;letter-spacing:-.01em;font-weight:300;color:var(--gr)}
+.logo .w b{font-weight:400;color:var(--ink)}
+.logo .n{font-size:13px;color:var(--ink);margin-top:3px;letter-spacing:.01em;font-weight:300}
+nav{display:none}
+nav a{text-decoration:none;font-size:16px;color:var(--ink);padding:6px 0;position:relative}
+nav a:hover{color:var(--rd)}
+.hd-tel{display:none}
+.burger{width:46px;height:46px;border:1px solid var(--line);background:#fff;display:grid;place-content:center;gap:6px;cursor:pointer;padding:0}
+.burger span{display:block;width:20px;height:1.5px;background:var(--ink);transition:transform .2s}
+.menu-open .burger span:first-child{transform:translateY(3.75px) rotate(45deg)}
+.menu-open .burger span:last-child{transform:translateY(-3.75px) rotate(-45deg)}
+.mnav{position:fixed;inset:var(--hh) 0 auto 0;background:#fff;border-bottom:1px solid var(--line);padding:8px 16px 20px;display:none;z-index:19}
+.menu-open .mnav{display:block}
+.mnav a{display:block;padding:13px 0;border-bottom:1px solid var(--g);text-decoration:none;font-size:19px;color:var(--ink)}
+.mnav a.btn{display:flex;margin-top:16px;width:100%;border-bottom:0;color:#fff;font-size:17px}
+@media (min-width:900px){
+ nav{display:flex;gap:34px}
+ .hd-tel{display:inline-flex;min-height:44px;padding:0 18px}
+ .burger,.mnav{display:none!important}
+ .logo .w{font-size:31px}
+}
+
+/* pierwszy ekran: arkusz rysunku */
+.hero{padding:16px 0 30px}
+.hero .in{display:grid;gap:18px}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.views figure{margin:0}
+.views img{width:100%;aspect-ratio:660/460;object-fit:cover;background:var(--g)}
+.views .v3{display:none}
+.views figcaption{display:none}
+.hero h1{font-size:clamp(28px,7.6vw,58px);font-weight:300;line-height:1.08}
+.hero h1 span{display:block;font-size:.5em;font-weight:400;line-height:1.3;margin-top:.45em;color:var(--mut);letter-spacing:0}
+.hero .lead{font-size:16.5px;line-height:1.55;color:var(--txt);margin:14px 0 0;max-width:34em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.hero .cta .btn{flex:1 1 150px}
+.hero .addr{margin-top:20px}
+@media (max-width:899px){.hero .addr{display:none}}
+@media (min-width:900px){
+ .hero{padding:0;border-bottom:1px solid var(--line)}
+ .hero .in{grid-template-columns:minmax(0,1fr) minmax(0,600px);gap:56px;align-items:center;min-height:calc(100svh - var(--hh));padding:36px 0 40px;position:relative}
+ .hero .txt{order:-1;max-width:560px}
+ .hero .lead{font-size:18.5px;margin-top:24px}
+ .hero .cta{margin-top:34px}
+ .hero .cta .btn{flex:0 0 auto;min-height:54px;padding:0 28px;font-size:17px}
+ .hero h1 span{font-size:.44em}
+ .views{grid-template-columns:1fr 1fr;gap:14px 26px;max-width:600px;justify-self:end;width:100%}
+ .views .v1{grid-column:1/-1}
+ .views .v3{display:block}
+ .views figcaption{display:flex;margin-top:8px}
+ .views .v1 img{max-width:600px}
+}
+@media (min-width:900px) and (max-height:820px){.views{max-width:520px}}
+@media (min-width:1800px){:root{--w:1400px}body{font-size:18px}.hero .in{grid-template-columns:minmax(0,1fr) 656px;gap:90px}.hero h1{font-size:74px}.hero .lead{font-size:20.5px;max-width:30em}.hero .txt{max-width:640px}.views{max-width:656px;gap:16px 28px}.views .v1 img{max-width:656px}h2{font-size:56px}.card{flex-basis:440px}}
+
+/* sekcje */
+section{padding:72px 0}
+@media (min-width:900px){section{padding:110px 0}}
+.sec-h{display:grid;gap:14px;margin-bottom:38px}
+.sec-h p{color:var(--mut);max-width:40em;margin:0}
+@media (min-width:900px){.sec-h{grid-template-columns:1fr 1fr;align-items:end;gap:60px;margin-bottom:54px}}
+
+/* pracownia */
+.prac .in{display:grid;gap:44px}
+.prac .opis p{font-size:18px}
+.prac .opis p:first-of-type{font-size:clamp(21px,2.3vw,26px);line-height:1.45;color:var(--ink);font-weight:300}
+.os{list-style:none;margin:0;padding:0 0 0 28px;position:relative}
+.os::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--rd)}
+.os li{position:relative;padding:0 0 26px}
+.os li:last-child{padding-bottom:0}
+.os li::before{content:"";position:absolute;left:-27px;top:11px;width:13px;height:1.5px;background:var(--rd);transform:rotate(-45deg)}
+.os b{display:block;font-weight:500;color:var(--ink);font-size:19px;line-height:1.3}
+.os span{color:var(--mut);font-size:16px}
+@media (min-width:900px){.prac .in{grid-template-columns:1.25fr 1fr;gap:90px}.os{margin-top:10px}}
+
+/* projekty - pas przesuwany */
+.proj{background:var(--g)}
+.rail-wrap{position:relative}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 calc((100vw - var(--w))/2) 6px;cursor:grab;overscroll-behavior-x:contain;scroll-padding-inline:calc((100vw - var(--w))/2)}
+.rail::-webkit-scrollbar{display:none}
+.rail.drag{cursor:grabbing;scroll-snap-type:none}
+.rail.drag a{pointer-events:none}
+.card{flex:0 0 240px;scroll-snap-align:center;background:#fff;margin:0;user-select:none}
+.card img{width:100%;aspect-ratio:660/460;object-fit:cover;pointer-events:none}
+.card .c{padding:18px 18px 22px}
+.card h3{margin-bottom:6px}
+.card .gdz{font-size:14.5px;color:var(--rd);margin-bottom:10px}
+.card p{font-size:15.5px;line-height:1.55;color:var(--mut);margin:0}
+.card .dim{margin-top:14px}
+@media (min-width:900px){.card{flex-basis:400px;scroll-snap-align:start}.rail{gap:22px}}
+.rail-nav{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
+.rail-nav button{width:52px;height:52px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;display:grid;place-items:center}
+.rail-nav button:hover{background:var(--ink)}
+.rail-nav button:hover svg{stroke:#fff}
+.rail-nav svg{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:1.5}
+
+/* zakres */
+.zakres ul{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.zakres li{padding:20px 0 20px 34px;border-bottom:1px solid var(--line);position:relative;font-size:18px;color:var(--ink);line-height:1.45}
+.zakres li::before{content:"";position:absolute;left:4px;top:33px;width:15px;height:1.5px;background:var(--rd);transform:rotate(-45deg)}
+.zakres li small{display:block;color:var(--mut);font-size:15.5px;margin-top:3px}
+@media (min-width:900px){.zakres ul{grid-template-columns:1fr 1fr;column-gap:60px}}
+
+/* lista projektow */
+.lista{background:var(--g)}
+.grupy{display:grid;gap:34px}
+.grupy h3{padding-bottom:10px;border-bottom:1.5px solid var(--ink);margin-bottom:12px}
+.grupy ul{margin:0;padding:0;list-style:none}
+.grupy li{font-size:15.5px;line-height:1.5;padding:7px 0;border-bottom:1px solid var(--line);color:var(--txt)}
+@media (min-width:700px){.grupy{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.grupy{grid-template-columns:repeat(3,1fr);gap:40px 50px}}
+
+/* kontakt - tabliczka rysunkowa */
+.kontakt{background:var(--dk);color:#C9CCD0}
+.kontakt h2{color:#fff}
+.kontakt .sec-h p{color:#A9ADB3}
+.kontakt .in>.wrap{display:grid;gap:40px}
+.tab{border:1px solid #55585D;display:grid;grid-template-columns:1fr 1fr}
+.tab div{padding:14px 16px;border-right:1px solid #55585D;border-bottom:1px solid #55585D;min-width:0}
+.tab div:nth-child(2n){border-right:0}
+.tab .full{grid-column:1/-1;border-right:0}
+.tab div:last-child,.tab div:nth-last-child(2):not(.full){border-bottom:0}
+.tab small{display:block;font-size:12.5px;color:#8E9298;margin-bottom:3px}
+.tab span,.tab a{color:#fff;font-size:17px;line-height:1.35;text-decoration:none;overflow-wrap:anywhere}
+.tab .big a{font-size:clamp(24px,3vw,32px);font-weight:300}
+.tab .big a:hover{color:#E2876A}
+.tab .logo-t{font-size:30px;font-weight:300;color:#9EA1A6;line-height:1}
+.tab .logo-t b{font-weight:400;color:#fff}
+form{display:grid;gap:14px}
+label{display:grid;gap:6px;font-size:14.5px;color:#A9ADB3}
+input,textarea{font:16px/1.4 Jost,Arial,sans-serif;color:#fff;background:transparent;border:1px solid #55585D;padding:13px 14px;border-radius:0;width:100%}
+input:focus,textarea:focus{outline:none;border-color:#E2876A}
+textarea{min-height:130px;resize:vertical}
+form .btn{justify-self:start}
+form .uw{font-size:14px;color:#8E9298;margin:0}
+@media (min-width:900px){.kontakt .in>.wrap{grid-template-columns:1fr 1fr;gap:70px}}
+
+footer{padding:30px 0;font-size:15px;color:var(--mut)}
+footer .in{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between;align-items:center}
+footer .f1{display:flex;flex-wrap:wrap;gap:4px 18px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<header>
+ <div class="in">
+  <a class="logo" href="#" aria-label="ikarchitekt Izabela Kułagowska - strona główna"><span class="w"><b>ik</b>architekt</span><span class="n">Izabela Kułagowska</span></a>
+  <nav aria-label="Menu główne"><a href="#pracownia">Pracownia</a><a href="#projekty">Projekty</a><a href="#zakres">Zakres prac</a><a href="#kontakt">Kontakt</a></nav>
+  <a class="btn rd hd-tel" href="tel:+48793301105">793 301 105</a>
+  <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+ </div>
+</header>
+<div class="mnav" id="mnav">
+ <a href="#pracownia">Pracownia</a><a href="#projekty">Projekty</a><a href="#zakres">Zakres prac</a><a href="#lista">Lista projektów</a><a href="#kontakt">Kontakt</a>
+ <a class="btn rd" href="tel:+48793301105">Zadzwoń: 793 301 105</a>
+</div>
+
+<main>
+<div class="hero">
+ <div class="in">
+  <div class="views">
+   <figure class="v1"><img src="img/dom-na-skarpie-1-330.webp" srcset="img/dom-na-skarpie-1-330.webp 330w, img/dom-na-skarpie-1.webp 656w" sizes="(min-width:900px) 600px, 48vw" width="660" height="460" alt="Dom na skarpie w Kielcach - zrealizowany projekt pracowni ikarchitekt" fetchpriority="high"><figcaption class="dim"><i></i><b>Dom „na skarpie”, Kielce</b><em></em></figcaption></figure>
+   <figure class="v2"><img src="img/dom-waska-dzialka-330.webp" srcset="img/dom-waska-dzialka-330.webp 330w, img/dom-waska-dzialka.webp 656w" sizes="(min-width:900px) 293px, 48vw" width="660" height="460" alt="Wizualizacja domu na wąskiej działce w Kielcach"><figcaption class="dim"><i></i><b>działka 14 m</b><em></em></figcaption></figure>
+   <figure class="v3"><img src="img/melioracyjna-330.webp" srcset="img/melioracyjna-330.webp 330w, img/melioracyjna.webp 571w" sizes="293px" width="660" height="460" alt="Wizualizacja budynku wielorodzinnego przy ul. Melioracyjnej w Warszawie"><figcaption class="dim"><i></i><b>8 kondygnacji</b><em></em></figcaption></figure>
+  </div>
+  <div class="txt">
+   <h1>Architekt w Kielcach<span>Projekty domów i budynków, które stają się wizytówką inwestora</span></h1>
+   <p class="lead">Pracownia ikarchitekt Izabeli Kułagowskiej. Domy jednorodzinne, budynki wielorodzinne i usługowe, przebudowy i wnętrza. Od koncepcji i warunków zabudowy po projekt budowlany i nadzór autorski.</p>
+   <div class="cta"><a class="btn rd" href="tel:+48793301105">Zadzwoń: 793 301 105</a><a class="btn" href="#projekty">Zobacz projekty</a></div>
+   <p class="addr dim"><i></i><b>ul. Urzędnicza 17, Kielce</b><em></em></p>
+  </div>
+ </div>
+</div>
+
+<section class="prac" id="pracownia">
+ <div class="in">
+  <div class="opis">
+   <h2>Każdy projekt zaczynam od nowa</h2>
+   <p style="margin-top:28px">Projektuję obiekty, które spełniają oczekiwania inwestora i dobrze wyglądają w swoim otoczeniu. Do każdego zlecenia podchodzę indywidualnie, bez gotowych schematów.</p>
+   <p>Prowadzę cały proces: od koncepcji, analizy działki i dokumentów do warunków zabudowy, przez projekt budowlany, po nadzór autorski na budowie. Przy instalacjach i konstrukcji pracuję ze sprawdzonymi pracowniami branżowymi, dlatego mogę podjąć się projektu każdego rodzaju obiektu.</p>
+   <p class="dim" style="margin-top:30px"><i></i><b>mgr inż. arch. Izabela Kułagowska, upr. bud. SW-17/2005</b><em></em></p>
+  </div>
+  <ol class="os" aria-label="Doświadczenie zawodowe">
+   <li><b>2000</b><span>Dyplom Wydziału Architektury i Urbanistyki Politechniki Krakowskiej oraz dyplom Royal Institute of British Architects</span></li>
+   <li><b>2000-2008</b><span>Pracownia architektoniczna Spółdzielni Pracy „Inwestprojekt Świętokrzyski” w Kielcach</span></li>
+   <li><b>2005</b><span>Uprawnienia budowlane do projektowania w specjalności architektonicznej bez ograniczeń</span></li>
+   <li><b>2008-2013</b><span>Pracownia Projektowa Regina Kozakiewicz-Opałka w Kielcach</span></li>
+   <li><b>ikarchitekt</b><span>Własna pracownia w Kielcach, ul. Urzędnicza 17</span></li>
+  </ol>
+ </div>
+</section>
+
+<section class="proj" id="projekty">
+ <div class="in sec-h">
+  <h2>Wybrane projekty</h2>
+  <p>Domy, budynki mieszkalne i usługowe, przebudowy, wnętrza i małe formy. Część z nich stoi już na ulicach Kielc i Warszawy.</p>
+ </div>
+ <div class="rail-wrap">
+  <div class="rail" id="rail" tabindex="0" aria-label="Wybrane projekty - przesuń">
+   <article class="card"><img src="img/dom-na-skarpie-2-330.webp" srcset="img/dom-na-skarpie-2-330.webp 330w, img/dom-na-skarpie-2.webp 656w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Dom na skarpie w Kielcach"><div class="c"><h3>Dom „na skarpie”</h3><div class="gdz">Kielce</div><p>Dom jednorodzinny z dwoma mieszkaniami na skarpie. Stary budynek na działce przebudowany na garaż i połączony z nowym.</p></div></article>
+   <article class="card"><img src="img/dom-waska-dzialka-2-330.webp" srcset="img/dom-waska-dzialka-2-330.webp 330w, img/dom-waska-dzialka-2.webp 656w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Wizualizacja domu na wąskiej działce w Kielcach"><div class="c"><h3>Dom „na wąskiej działce”</h3><div class="gdz">Kielce</div><p>Dom jednorodzinny na działce o szerokości zaledwie 14 metrów.</p><p class="dim"><i></i><b>14 m</b><em></em></p></div></article>
+   <article class="card"><img src="img/nowy-swiat-330.webp" srcset="img/nowy-swiat-330.webp 330w, img/nowy-swiat.webp 571w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Wizualizacja budynku mieszkalnego przy ul. Nowy Świat w Kielcach"><div class="c"><h3>Budynek mieszkalny z usługami</h3><div class="gdz">Kielce, ul. Nowy Świat</div><p>88 mieszkań, 61 miejsc garażowych i 4 lokale usługowe między niską zabudową a wieżowcami osiedla. Projekt z pozwoleniem na budowę.</p></div></article>
+   <article class="card"><img src="img/melioracyjna-330.webp" srcset="img/melioracyjna-330.webp 330w, img/melioracyjna.webp 571w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Wizualizacja budynku wielorodzinnego przy ul. Melioracyjnej w Warszawie"><div class="c"><h3>Budynek wielorodzinny</h3><div class="gdz">Warszawa, ul. Melioracyjna</div><p>Koncepcja budynku z 27 mieszkaniami na 8 kondygnacjach, uzupełnienie istniejącej zabudowy osiedla.</p></div></article>
+   <article class="card"><img src="img/siemiatycka-330.webp" srcset="img/siemiatycka-330.webp 330w, img/siemiatycka.webp 656w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Budynek mieszkalny przy ul. Siemiatyckiej w Warszawie"><div class="c"><h3>Budynek mieszkalny</h3><div class="gdz">Warszawa, ul. Siemiatycka</div><p>58 mieszkań dla SM „Bielany”. Projekt autorski opracowany w zespole Inwestprojektu Świętokrzyskiego.</p></div></article>
+   <article class="card"><img src="img/hurtownia-330.webp" srcset="img/hurtownia-330.webp 330w, img/hurtownia.webp 656w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Hurtownia przy ul. Mielczarskiego w Kielcach po przebudowie"><div class="c"><h3>Hurtownia</h3><div class="gdz">Kielce, ul. Mielczarskiego</div><p>Przebudowa, rozbudowa i nadbudowa istniejącego budynku hurtowni.</p></div></article>
+   <article class="card"><img src="img/szczepaniaka-330.webp" srcset="img/szczepaniaka-330.webp 330w, img/szczepaniaka.webp 656w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Budynek przy ul. Szczepaniaka w Kielcach po termomodernizacji"><div class="c"><h3>Termomodernizacja</h3><div class="gdz">Kielce, ul. Szczepaniaka 25</div><p>Projekt termomodernizacji budynku wielorodzinnego razem z kolorystyką elewacji i detalami.</p></div></article>
+   <article class="card"><img src="img/m2-jadalnia-330.webp" srcset="img/m2-jadalnia-330.webp 330w, img/m2-jadalnia.webp 648w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Wnętrze mieszkania w bloku z wielkiej płyty po metamorfozie"><div class="c"><h3>M2 w starym budownictwie</h3><div class="gdz">Wnętrza</div><p>Mieszkanie w bloku z wielkiej płyty po metamorfozie, czyli prefabrykacja po liftingu.</p></div></article>
+   <article class="card"><img src="img/podworko-330.webp" srcset="img/podworko-330.webp 330w, img/podworko.webp 656w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Aranżacja podwórka z ogrodzeniem w Kielcach"><div class="c"><h3>Aranżacja podwórka</h3><div class="gdz">Kielce, zabudowa szeregowa</div><p>Podwórko razem z projektem ogrodzenia od ulicy.</p></div></article>
+   <article class="card"><img src="img/ogrodzenie-330.webp" srcset="img/ogrodzenie-330.webp 330w, img/ogrodzenie.webp 609w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Ogrodzenie domu jednorodzinnego w Kielcach"><div class="c"><h3>Projekt ogrodzenia</h3><div class="gdz">Kielce, dom jednorodzinny</div><p>Mała forma architektoniczna: kamienne słupki i ażurowa furtka.</p></div></article>
+   <article class="card"><img src="img/dom-studenta-4-330.webp" srcset="img/dom-studenta-4-330.webp 330w, img/dom-studenta-4.webp 656w" sizes="(min-width:900px) 400px, 240px" width="660" height="460" loading="lazy" alt="Dom studenta nr 4 przy ul. Śląskiej w Kielcach"><div class="c"><h3>Dom studenta nr 4</h3><div class="gdz">Kielce, ul. Śląska</div><p>Wolnostojący, 8-kondygnacyjny budynek z klubem studenckim. Projekt w zespole Inwestprojektu Świętokrzyskiego.</p></div></article>
+  </div>
+  <div class="in rail-nav"><button type="button" data-d="-1" aria-label="Poprzednie projekty"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-d="1" aria-label="Następne projekty"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button></div>
+ </div>
+</section>
+
+<section class="zakres" id="zakres">
+ <div class="in">
+  <div class="sec-h"><h2>Zakres prac</h2><p>Może Pani lub Pan powierzyć mi cały proces albo jeden etap, na przykład samą koncepcję czy nadzór autorski.</p></div>
+  <ul>
+   <li>Przygotowanie inwestycji<small>koncepcje architektoniczne, analizy urbanistyczne, inwentaryzacje budowlane, dokumenty do decyzji o warunkach zabudowy</small></li>
+   <li>Projekty budowlane<small>wielobranżowe, w pełnym zakresie</small></li>
+   <li>Obsługa procesu projektowego<small>prowadzenie projektu od pierwszej rozmowy do pozwolenia na budowę</small></li>
+   <li>Projekty wnętrz<small>mieszkania, domy, wnętrza budynków użytkowych</small></li>
+   <li>Małe formy i projekty graficzne<small>ogrodzenia, podwórka, detale</small></li>
+   <li>Konsultacje i doradztwo architektoniczne</li>
+   <li>Nadzór autorski nad realizacją</li>
+  </ul>
+ </div>
+</section>
+
+<section class="lista" id="lista">
+ <div class="in">
+  <div class="sec-h"><h2>Lista projektów</h2><p>Pełna lista prac z podziałem na rodzaje obiektów. Część powstała we współpracy z pracowniami, w których pracowałam.</p></div>
+  <div class="grupy">
+   <div><h3>Mieszkalne</h3><ul><li>Dom w pierzei, Kielce</li><li>Siedlisko pod Kielcami, działka 18 m</li><li>Dom na wąskiej działce, Kielce</li><li>Dom „na skarpie”, Kielce</li><li>Zespół „Zacisze”, Kielce</li><li>Zespół mieszkaniowy ul. Kaznowskiego, Kielce</li><li>Budynki wielorodzinne: Siemiatycka, Żółwia, Melioracyjna (Warszawa), Ustrzycka (Rzeszów), Nowy Świat (Kielce)</li><li>Domy studenta nr 4 i 5, Kielce</li></ul></div>
+   <div><h3>Usługowe</h3><ul><li>Hurtownia przy ul. Mielczarskiego, Kielce</li><li>III miejsce w konkursie na koncepcję ogrodu botanicznego w Kielcach</li><li>Ośrodek „Promień” w Mariówce</li><li>Hotel „Stodółka”, Ćmińsk Kościelny</li><li>Internat Zespołu Państwowych Szkół Plastycznych, Kielce</li></ul></div>
+   <div><h3>Urbanistyka</h3><ul><li>Parkingi i garaże dla RSM „Armatury”, Kielce</li><li>Organizacja ruchu na osiedlu „Jagiellońskie”</li><li>Parkingi przy ul. Słonecznej i Urzędniczej</li></ul><h3 style="margin-top:30px">Małe formy i wnętrza</h3><ul><li>Aranżacja podwórka z ogrodzeniem, Kielce</li><li>Projekt ogrodzenia, Kielce</li><li>M2 w starym budownictwie</li><li>Termomodernizacja ul. Szczepaniaka 25, Kielce</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <div class="in">
+  <div class="sec-h"><h2>Porozmawiajmy o Pani lub Pana inwestycji</h2><p>Proszę zadzwonić albo opisać krótko działkę i plany. Odpowiem i zaproponuję pierwsze kroki.</p></div>
+  <div class="wrap">
+   <div class="tab">
+    <div class="full"><small>Pracownia</small><span class="logo-t"><b>ik</b>architekt</span></div>
+    <div class="full big"><small>Telefon</small><a href="tel:+48793301105">793 301 105</a></div>
+    <div><small>Projektant</small><span>mgr inż. arch. Izabela Kułagowska</span></div>
+    <div><small>Uprawnienia</small><span>SW-17/2005, SW-0134</span></div>
+    <div><small>Adres</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Urz%C4%99dnicza+17+Kielce" target="_blank" rel="noopener">ul. Urzędnicza 17<br>25-729 Kielce</a></div>
+    <div><small>NIP</small><span>959 128 18 79</span></div>
+   </div>
+   <form id="f" novalidate>
+    <label>Imię i nazwisko<input name="n" autocomplete="name"></label>
+    <label>Telefon lub e-mail<input name="k" autocomplete="tel"></label>
+    <label>Czego dotyczy projekt?<textarea name="o" placeholder="np. dom jednorodzinny, działka w Kielcach, mam już warunki zabudowy"></textarea></label>
+    <button class="btn rd" type="submit">Wyślij zapytanie</button>
+    <p class="uw" id="fuw" hidden>To podgląd strony, formularz jeszcze nie wysyła wiadomości.</p>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="in">
+  <div class="f1"><span>© 2026 ikarchitekt Izabela Kułagowska, architekt Kielce</span><span>Polityka prywatności</span></div>
+  <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=ikarchitekt.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+ </div>
+</footer>
+
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('mnav');
+ b.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.closest('a')){document.body.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});
+ var r=document.getElementById('rail');
+ document.querySelectorAll('.rail-nav button').forEach(function(x){x.addEventListener('click',function(){var c=r.querySelector('.card');r.scrollBy({left:(+x.dataset.d)*(c.offsetWidth+20),behavior:'smooth'})})});
+ var dn=false,sx=0,sl=0,mv=0;
+ r.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;mv=0;sx=e.clientX;sl=r.scrollLeft});
+ window.addEventListener('pointermove',function(e){if(!dn)return;var d=e.clientX-sx;mv=Math.abs(d);if(mv>4)r.classList.add('drag');r.scrollLeft=sl-d});
+ window.addEventListener('pointerup',function(){if(!dn)return;dn=false;r.classList.remove('drag')});
+ document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('fuw').hidden=false});
+})();
+</script>
+</body>
+</html>
